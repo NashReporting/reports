@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpaceX IPO — Lock-Up &amp; Liquidity Analysis</title>
+<style>
+  :root{
+    --ink:#1a1d24; --muted:#5b6472; --line:#e3e7ee; --bg:#ffffff;
+    --accent:#0b5cd8; --accent-soft:#eef4ff; --warn:#9a5b00; --warn-soft:#fff6e6;
+    --good:#0a6b3b; --good-soft:#e9f7ef;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:#f4f6fa; color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:820px; margin:0 auto; padding:32px 20px 64px;}
+  .card{background:var(--bg); border:1px solid var(--line); border-radius:14px; padding:40px 44px; box-shadow:0 1px 3px rgba(20,30,50,.05);}
+  header.doc{border-bottom:2px solid var(--ink); padding-bottom:20px; margin-bottom:8px;}
+  .eyebrow{font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); font-weight:700; margin:0 0 8px;}
+  h1{font-size:28px; line-height:1.25; margin:0 0 10px; letter-spacing:-.01em;}
+  .sub{color:var(--muted); font-size:14px; margin:0;}
+  .meta{display:flex; flex-wrap:wrap; gap:8px 24px; margin-top:16px; font-size:13px; color:var(--muted);}
+  .meta b{color:var(--ink); font-weight:600;}
+  h2{font-size:20px; margin:38px 0 12px; padding-top:6px; letter-spacing:-.01em;}
+  h3{font-size:15px; margin:22px 0 6px; text-transform:uppercase; letter-spacing:.05em; color:var(--muted);}
+  p{margin:12px 0;}
+  ul{margin:12px 0; padding-left:22px;}
+  li{margin:7px 0;}
+  .callout{border-radius:10px; padding:16px 18px; margin:18px 0; font-size:15px; border:1px solid;}
+  .callout p{margin:6px 0;}
+  .callout.key{background:var(--accent-soft); border-color:#cfe0ff;}
+  .callout.warn{background:var(--warn-soft); border-color:#f3dca6;}
+  .callout.good{background:var(--good-soft); border-color:#bfe6ce;}
+  .callout .tag{font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; display:block; margin-bottom:4px;}
+  .callout.key .tag{color:var(--accent);}
+  .callout.warn .tag{color:var(--warn);}
+  .callout.good .tag{color:var(--good);}
+  blockquote{margin:14px 0; padding:12px 18px; border-left:3px solid var(--accent); background:#f8faff; color:#2c3340; font-size:14.5px; border-radius:0 8px 8px 0;}
+  table{width:100%; border-collapse:collapse; margin:16px 0; font-size:14.5px;}
+  th,td{text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top;}
+  th{font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); border-bottom:2px solid var(--line);}
+  td.pct{font-weight:700; white-space:nowrap; color:var(--accent);}
+  .tier{display:inline-block; font-size:12px; font-weight:700; padding:2px 9px; border-radius:20px; margin-right:6px;}
+  .tier.t1{background:var(--accent-soft); color:var(--accent);}
+  .tier.t2{background:#f3e9ff; color:#6b28c0;}
+  .tier.dsp{background:var(--good-soft); color:var(--good);}
+  hr{border:none; border-top:1px solid var(--line); margin:30px 0;}
+  footer{margin-top:34px; padding-top:18px; border-top:1px solid var(--line); font-size:12.5px; color:var(--muted);}
+  footer a{color:var(--accent); text-decoration:none;}
+  .small{font-size:13px; color:var(--muted);}
+  code{background:#f1f3f7; padding:1px 6px; border-radius:5px; font-size:13.5px;}
+  @media print{body{background:#fff;} .card{border:none; box-shadow:none; padding:0;} .wrap{padding:0;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+
+<header class="doc">
+  <p class="eyebrow">Confidential Analysis</p>
+  <h1>SpaceX IPO — Lock-Up &amp; Liquidity Provisions</h1>
+  <p class="sub">Analysis of resale restrictions on existing private holders, drawn from the primary filing</p>
+  <div class="meta">
+    <span><b>Issuer:</b> Space Exploration Technologies Corp.</span>
+    <span><b>Ticker:</b> SPCX (Nasdaq / Nasdaq Texas)</span>
+    <span><b>Source:</b> Form S-1/A (Amendment No. 1)</span>
+    <span><b>Prepared:</b> June 5, 2026</span>
+  </div>
+</header>
+
+<div class="callout key">
+  <span class="tag">Bottom line</span>
+  <p>The filing creates <b>three distinct classes of holder</b> with very different liquidity. A 180-day tier (most existing stockholders) with a heavily front-loaded early-release schedule; a 366-day tier (the Founder + certain significant investors) with <b>no early release at all</b>; and a Directed Share Program (select employees / friends &amp; family) with <b>no lock-up whatsoever</b>. Your liquidity depends entirely on which class your shares sit in.</p>
+</div>
+
+<h2>1. The Directed Share Program — the no-lock-up carve-out</h2>
+<p>In the Underwriting section, SpaceX reserves a tranche of the offering for insiders that is exempt from any resale restriction. Per the filing:</p>
+<blockquote>"the underwriters have reserved up to [&nbsp;] percent of the shares… through a directed share program to certain employees and persons identified by our management, which may include parties with whom we have a business relationship and friends and family of management. <b>If purchased by these persons, these shares will not be subject to a lock-up restriction.</b>"</blockquote>
+<p>These holders can sell as soon as the stock begins trading, subject only to the company's insider-trading policy and to securities-law restrictions for anyone holding material non-public information. Press reporting puts the reserved amount at ~5% of the offering; <b>the exact percentage is left blank in this preliminary prospectus.</b></p>
+
+<h2>2. Two lock-up tiers for everyone else</h2>
+<p>Unlike a conventional single 180-day lock-up, the S-1/A defines two separate tiers.</p>
+
+<h3><span class="tier t1">Tier 1</span> 180-day lock-up</h3>
+<p>The company, all directors, and executive officers agree not to sell for 180 days from the date of the prospectus — but with the staggered early-release schedule in Section 3 below. This is the bucket where a large share of holdings can be sold well before the 180-day mark.</p>
+
+<h3><span class="tier t2">Tier 2</span> 366-day lock-up — Founder &amp; significant investors</h3>
+<p>A separate, stricter tier captures the Founder and a defined set of large holders:</p>
+<blockquote>"Our Founder and certain significant investors have agreed… that during a period of <b>366 days</b> after the date of this prospectus, an aggregate of [&nbsp;] shares owned by them (<b>including 100% of the shares owned by our Founder</b>)… <b>This total amount of shares will not be subject to any early release provisions.</b>"</blockquote>
+<div class="callout warn">
+  <span class="tag">Worth noting</span>
+  <p>This corrects a common misreading in press coverage. Elon Musk is <b>not</b> locked for 180 days — his entire holding is locked for a <b>full 366 days with zero early release</b>, and an unspecified group of "significant investors" is bound to that same year-long tier. If an existing private investor is deemed "significant," they may sit here rather than in the 180-day tier.</p>
+</div>
+
+<h2>3. The Tier 1 early-release schedule</h2>
+<p>For shares designated "Early Release Eligible Shares," portions are released automatically before the 180-day expiry, measured from the offering date:</p>
+<table>
+  <thead><tr><th>Trigger</th><th>Shares released</th></tr></thead>
+  <tbody>
+    <tr><td>After Q2 2026 earnings ("First Earnings Release Date," quarter ended June 30, 2026)</td><td class="pct">up to 20%</td></tr>
+    <tr><td>If closing price is ≥30% above IPO price for ≥5 of the 10 consecutive trading days ending on the First Earnings Release Date</td><td class="pct">+10%</td></tr>
+    <tr><td>On each of days 70, 90, 105, 120, and 135 after the offering (7% per date)</td><td class="pct">+35%</td></tr>
+    <tr><td>After Q3 2026 earnings (quarter ended Sept 30, 2026)</td><td class="pct">+28%</td></tr>
+    <tr><td>180 days after the offering</td><td class="pct">remainder</td></tr>
+  </tbody>
+</table>
+<p class="small">The schedule is deliberately front-loaded so the market does not face a single large supply event at day 180, and so the public float (and index eligibility) builds gradually.</p>
+
+<h2>4. Two provisions that change the picture</h2>
+<ul>
+  <li><b>M&amp;A carve-out.</b> The lock-up "will not apply to securities to be issued by the Company in connection with <b>any mergers, acquisitions or similar transactions</b> during the lock-up period." The filing adds that "certain additional exceptions… will be detailed in a subsequent amendment." This is the same equity-issuance language driving market speculation about a large strategic transaction.</li>
+  <li><b>Discretionary waiver.</b> Goldman Sachs &amp; Co. LLC, as representative of the underwriters, may release any party from these lock-ups at any time with prior written consent.</li>
+</ul>
+
+<h2>5. What this means for a current private holder</h2>
+<ul>
+  <li><span class="tier t1">Tier 1</span> <b>General existing stockholder</b> → realistic first liquidity is the Q2 earnings release (20%), then the day-70+ tranches — <b>not</b> IPO day.</li>
+  <li><span class="tier t2">Tier 2</span> <b>"Significant investor"</b> → potentially locked a full 366 days with no staggered exits, alongside the Founder. A materially worse liquidity profile; confirm directly whether your holding is so designated.</li>
+  <li><span class="tier dsp">DSP</span> <b>Directed Share Program</b> → no lock-up, but this is reserved for employees / friends &amp; family and is unlikely to apply to outside private investors.</li>
+</ul>
+<div class="callout good">
+  <span class="tag">Action</span>
+  <p>The single most important thing to confirm with your fund / SPV manager is <b>which tier your specific shares were placed in</b> (180-day vs. 366-day), and whether your SPV layers any additional restriction on top of the issuer lock-up.</p>
+</div>
+
+<h2>6. Important caveat — preliminary figures</h2>
+<p>This is a <b>preliminary</b> S-1/A. The early-release <i>mechanics and triggers</i> above are in final-form language, but the underlying <b>quantities are left blank</b> in the filing: the share counts in each tier, the percentage of shares allocated to the 366-day tier, and the Directed Share Program percentage. These will not be fixed until a later amendment / the final pricing prospectus. Treat all percentages tied to specific share counts as not-yet-final.</p>
+
+<footer>
+  <p><b>Primary source:</b> Space Exploration Technologies Corp., Form S-1/A (Amendment No. 1), filed with the U.S. Securities and Exchange Commission — "Shares Eligible for Future Sale" and "Underwriting — Lock-Up Agreements / Directed Share Program" sections. Retrieved from SEC EDGAR (CIK 0001181412).</p>
+  <p class="small">Prepared as an informational summary of disclosed terms. Not investment, legal, or tax advice. Quoted passages are reproduced from the filing; bracketed blanks <code>[ ]</code> reflect figures left blank in the preliminary prospectus.</p>
+</footer>
+
+</div>
+</div>
+</body>
+</html>
